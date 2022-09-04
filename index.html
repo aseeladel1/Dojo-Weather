@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <p>Dojo Weather</p>
+        <ul>
+          <li onclick="message()">Burbank</li>
+          <li onclick="message()">chicago</li>
+          <li onclick="message()">dallas</li>
+        </ul>
+      </div>
+      <div class="main">
+        <h1>San Jose</h1>
+        <p>
+          show temperature in
+          <select onchange="change(this)">
+            <option>C°</option>
+            <option>F°</option>
+          </select>
+        </p>
+      </div>
+      <div class="body">
+        <div class="section1">
+          <h2>Today</h2>
+          <br /><br />
+          <img src="image/some_rain.png" />
+          <br /><br />
+          <h3>some rain</h3>
+          <br /><br />
+          <div class="temperature">
+            <p id="highest">24°</p>
+            <p id="lowest">18°</p>
+          </div>
+        </div>
+        <div class="section2">
+          <h2>Tomarrow</h2>
+          <br /><br />
+          <img src="image/some_sun.png" />
+          <br /><br />
+          <h3>some sun</h3>
+          <br /><br />
+          <div class="temperature">
+            <p id="highest">27°</p>
+            <p id="lowest">19°</p>
+          </div>
+        </div>
+        <div class="section3">
+          <h2>Friday</h2>
+          <br /><br />
+          <img src="image/some_clouds.png" />
+          <br /><br />
+          <h3>some couds</h3>
+          <br /><br />
+          <div class="temperature">
+            <p id="highest">21°</p>
+            <p id="lowest">16°</p>
+          </div>
+        </div>
+        <div class="section4">
+          <h2>Today</h2>
+          <br /><br />
+          <img src="image/some_sun.png" /> <br /><br />
+          <h3>some sun</h3>
+          <br /><br />
+          <div class="temperature">
+            <p id="highest">26°</p>
+            <p id="lowest">21°</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <img src="image/cookie.png" />
+        <div>
+          <h4>Stop! Cookie time</h4>
+
+          <p>
+            We use cookies (sadly not the edible ones) to pesonalize content and
+            ads, to provide social media featuresand to analyse our traffic.
+            <a href="Read more">Read more</a>
+          </p>
+        </div>
+        <button onclick="hide(this)">I Accept</button>
+      </div>
+    </div>
+  </body>
+</html>
